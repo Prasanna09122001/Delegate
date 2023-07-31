@@ -7,7 +7,8 @@ namespace Delegate
         static void Main()
         {
             //ArrayDelegate.SingleCastDelegate();
-            ArrayDelegate.MultiCastDelegate();
+            // ArrayDelegate.MultiCastDelegate();
+            EventHandler.EventImplement();
         }
     }
 
