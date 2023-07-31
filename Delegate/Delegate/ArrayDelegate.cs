@@ -4,7 +4,7 @@ namespace Delegate
     internal class ArrayDelegate
     {
         delegate void DelOp(int x, int y);
-        public static void Implementation()
+        public static void SingleCastDelegate()
         {
             DelOp[] obj =
             {
@@ -18,6 +18,13 @@ namespace Delegate
                 obj[i](4, 6);
                 Console.WriteLine();
             }
+        }
+        public static void MultiCastDelegate()
+        {
+            DelOp op = Operation.Add;
+            op += Operation.Sub;
+            op(2, 1);
+            op(7, 3);
         }
     }
 }
